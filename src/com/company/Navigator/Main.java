@@ -85,6 +85,33 @@ class SitesFind extends FindStrategy {
     }
 }
 
+class Map {
+
+}
+
+class Navigator {
+    private Map map;
+
+    public Map getMap() {
+        return map;
+    }
+
+    public void setMap(Map map) {
+        this.map = map;
+    }
+
+    public Navigator(Map map) {
+        this.map = map;
+    }
+
+    public void showMap() {
+        System.out.println("Карта");
+    }
+
+    public void Find(FindStrategy fs, int[] array) {
+        fs.Find(array);
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
